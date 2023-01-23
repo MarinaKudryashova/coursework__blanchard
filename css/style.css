@@ -316,7 +316,7 @@ justify-content: space-between;
   z-index: 10;
 }
 .menu-dropdown__item:not(:last-child) {
-  margin-right: 32px;
+  margin-right: 25px;
 }
 .menu-dropdown__btn {
   padding: 23px 0;
