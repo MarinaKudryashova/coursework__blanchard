@@ -157,7 +157,6 @@ fieldset {
   font-size: 18px;
   font-weight: 600;
   line-height: 25px;
-  color: var(--white-color);
 }
 /* === header === */
 .header__content {
@@ -214,6 +213,7 @@ justify-content: space-between;
 }
 .menu__link {
   font-weight: 600;
+  color: var(--white-color);
   -webkit-transition: color .3s ease-in-out;
   -o-transition: color .3s ease-in-out;
   transition: color .3s ease-in-out;
