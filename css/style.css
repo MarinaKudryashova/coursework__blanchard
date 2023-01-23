@@ -343,8 +343,10 @@ justify-content: space-between;
   transition: opacity .3s ease-in-out;
   cursor: pointer;
 }
-.menu-dropdown__btn svg {
+.menu-dropdown__btn svg,
+.menu-dropdown__btn span {
   stroke: currentColor;
+  color: currentColor;
   -webkit-transform: translateY(-1px);
       -ms-transform: translateY(-1px);
           transform: translateY(-1px);
