@@ -73,6 +73,7 @@
     width: 100%;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.9);
+    z-index: 20;
     opacity: 0;
     visibility: hidden;
     -webkit-transform: translateX(-100%);
@@ -189,6 +190,36 @@
   .searchbar__close {
     margin-left: 24px;
   }
+  /* promo */
+  .promo-swiper {
+    height: 768px;
+  }
+  .promo-swiper__img-1 {
+    background-image: url('../img/promo/castle1024x768.jpg');
+  }
+  /* .promo-swiper__img-1 {
+    background-image: -webkit-image-set(
+      url('../img/promo/castle1024x768.jpg') 1x,
+      url('../img/promo/castle1917-1x.jpg') 2x
+    );
+  } */
+  .promo-swiper__img-2 {
+    background-image: url('../img/promo/bible-story1024x768.jpg');
+  }
+  .promo-swiper__img-3 {
+    background-image: url('../img/promo/forest1024x768.jpg');
+  }
+  .promo__content {
+    padding: 107px 0 113px;
+    max-width: 700px;
+  }
+  .promo__slogan {
+    margin-bottom: -12px;
+  }
+  .promo__desc {
+    margin-bottom: 130px;
+  }
+
 }
 
 @media(max-width: 992px) {
@@ -224,18 +255,73 @@
   .searchbar__field {
     width: calc(100% - 95px);
   }
-
+  /* promo */
+  /* .promo-swiper__img-1 {
+    background-image: -webkit-image-set(
+      url('../img/promo/castle768x768.jpg') 1x,
+      url('../img/promo/castle1024-1x.jpg') 2x
+    );
+  } */
+  /* .promo-swiper__img-1 {
+    background-image: url('../img/promo/castle768x768.jpg');
+  } */
+  /* .promo-swiper__img-2 {
+    background-image: url('../img/promo/bible-story768x768.jpg');
+  }
+  .promo-swiper__img-3 {
+    background-image: url('../img/promo/forest768x768.jpg');
+  } */
 }
-@media(max-width: 776.98px) {
+@media(max-width: 768px) {
+  /* promo */
+  .promo-swiper__img-1 {
+    background-image: url('../img/promo/castle768x768.jpg');
+  }
+  .promo-swiper__img-2 {
+    background-image: url('../img/promo/bible-story768x768.jpg');
+  }
+  .promo-swiper__img-3 {
+    background-image: url('../img/promo/forest768x768.jpg');
+  }
+  .promo__content {
+    max-width: none;
+    width: 100%;
+  }
+}
+@media(max-width: 658px) {
+  /* promo */
+  .promo__content {
+    align-items: center;
+    text-align: center;
+  }
+  .promo__slogan {
+    font-size: 65px;
+    line-height: 83px;
+  }
 
 }
 @media(max-width: 576.98px) {
+  :root {
+    --section-padding: 50px;
+  }
   .container {
     padding: 0 15px;
   }
   .link-text {
     font-size: 16px;
     line-height: 2;
+  }
+  .btn {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .section-title {
+    font-size: 28px;
+    line-height: 38px;
+  }
+  .section-text {
+    font-size: 14px;
+    line-height: 28px;
   }
   /* === header === */
   .header__content--top {
@@ -286,6 +372,50 @@
     }
     .searchbar__field::placeholder {
       font-size: 16px;
+    }
+    /* promo */
+    .promo-swiper {
+      height: 355px;
+    }
+    .promo-swiper__img-1 {
+      background-image: url('../img/promo/castle320x355.jpg');
+    }
+    .promo-swiper__img-2 {
+      background-image: url('../img/promo/bible-story320x355.jpg');
+    }
+    .promo-swiper__img-3 {
+      background-image: url('../img/promo/forest320x355.jpg');
+    }
+    .promo__content {
+      max-width: 500px;
+    }
+    .promo__content {
+      align-items: center;
+      padding: 26px 15px 44px;
+      text-align: center;
+    }
+    .promo__slogan {
+      margin-bottom: 0px;
+      font-size: 32px;
+      line-height: 44px;
+      letter-spacing: 1px;
+    }
+    .promo__desc {
+      margin-bottom: 41px;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 16px;
+      letter-spacing: 0;
+    }
+    .promo__link {
+      padding: 11px 19px 10px;
+    }
+    /* about */
+    .about {
+      padding: var(--section-padding) 0 42px;
+    }
+    .about__title {
+      margin-bottom: 12px;
     }
 
 }

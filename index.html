@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="lib/simplebar.css">
+    <link rel="stylesheet" href="lib/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
     <title>Blanchard художественная галерея</title>
@@ -34,12 +35,12 @@
 
         <nav class="header__menu menu flex-v-center">
           <ul class="menu__list list-reset flex">
-            <li class="menu__item"><a href="#" class="menu__link link-text">О нас</a></li>
-            <li class="menu__item"><a href="#" class="menu__link link-text">Галерея</a></li>
-            <li class="menu__item"><a href="#" class="menu__link link-text">Каталог</a></li>
-            <li class="menu__item"><a href="#" class="menu__link link-text">События</a></li>
-            <li class="menu__item"><a href="#" class="menu__link link-text">Проекты</a></li>
-            <li class="menu__item"><a href="#" class="menu__link link-text">Контакты</a></li>
+            <li class="menu__item"><a href="#about" class="menu__link link-text">О нас</a></li>
+            <li class="menu__item"><a href="#gallery" class="menu__link link-text">Галерея</a></li>
+            <li class="menu__item"><a href="#catalog" class="menu__link link-text">Каталог</a></li>
+            <li class="menu__item"><a href="#events" class="menu__link link-text">События</a></li>
+            <li class="menu__item"><a href="#projects" class="menu__link link-text">Проекты</a></li>
+            <li class="menu__item"><a href="#contacts" class="menu__link link-text">Контакты</a></li>
           </ul>
           <button class="login btn-reset">
             <svg class="login__icon" width="13" height="13" viewbox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -215,7 +216,94 @@
     </div>
 
   </header>
-  <main class="main"></main>
+  <main class="main">
+    <section class="promo">
+      <div class="promo__bg promo-swiper">
+        <div class="promo-swiper__wrapper">
+          <div class="promo-swiper__slide promo-swiper__img-1"></div>
+          <div class="promo-swiper__slide promo-swiper__img-2"></div>
+          <div class="promo-swiper__slide promo-swiper__img-3"></div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="promo__content">
+          <h1 class="visually-hidden">Blanchard художественная галерея</h1>
+          <span class="promo__slogan">Прикоснитесь к&nbsp;прекрасному</span>
+          <p class="promo__desc">Мы&nbsp;вынуждены отталкиваться от&nbsp;того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений</p>
+          <a href="#" class="promo__link btn">Подписаться на&nbsp;рассылку</a>
+        </div>
+      </div>
+    </section>
+    <section class="about">
+      <div class="container">
+        <h2 id="about" class="about__title section-title ">О&nbsp;нас</h2>
+        <p class="about__decsr section-text">Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого участника как способного принимать собственные решения касаемо распределения внутренних резервов и&nbsp;ресурсов. Не&nbsp;следует, однако, забывать, что высококачественный прототип будущего проекта влечёт за&nbsp;собой процесс внедрения и&nbsp;модернизации модели развития. Повседневная практика показывает, что высокое качество позиционных исследований создаёт необходимость включения в&nbsp;производственный план целого ряда внеочередных мероприятий с&nbsp;учётом комплекса распределения внутренних резервов и&nbsp;ресурсов. В&nbsp;рамках спецификации современных стандартов, действия представителей оппозиции набирают популярность среди определённых слоёв населения, а&nbsp;значит, должны быть разоблачены.</p>
+      </div>
+    </section>
+    <section class="gallery">
+      <div class="container">
+        <div class="gallery__content">
+          <div class="gallery__forms-group">
+            <h2 id="gallery" class="gallery__title section-title">Галерея</h2>
+            <form class="gallery__form-select" action="#" method="post">
+              <fieldset>
+                <legend class="gallery__legend section-text">Фильтр:</legend>
+                <select class="gallery__select" name="select" id="customselect">
+                  <optgroup>
+                    <option class="section-text" value="" selected>Живопись</option>
+                    <option class="section-text">Рисунок</option>
+                    <option class="section-text">Скульптура</option>
+                  </optgroup>
+                </select>
+              </fieldset>
+            </form>
+            <form action="#" class="gallery__checkbox checkbox" method="post">
+              <fieldset>
+                <legend class="gallery__legend visually-hidden">Категории:</legend>
+                <ul class="checkbox__list list-reset">
+                  <li class="checkbox__item">
+                    <label class="checkbox__label">
+                      <input class="checkbox__input visually-hidden" type="checkbox" name="">
+                      <span class="checkbox__custom" role="checked" aria-checked="false"></span>
+                      <span class="checkbox__text">XIX век</span>
+                    </label>
+                  </li>
+                  <li class="checkbox__item">
+                    <label class="checkbox__label">
+                      <input class="checkbox__input visually-hidden" type="checkbox" name="" checked>
+                      <span class="checkbox__custom" role="checked" aria-checked="true"></span>
+                      <span class="checkbox__text">XX&nbsp;век</span>
+                    </label>
+                  </li>
+                  <li class="checkbox__item">
+                    <label class="checkbox__label">
+                      <input class="checkbox__input visually-hidden" type="checkbox" name="">
+                      <span class="checkbox__custom" role="checked" aria-checked="false"></span>
+                      <span class="checkbox__text">Современность</span>
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+            </form>
+          </div>
+          <div class="gallery__slider gallery-swiper">
+            <div class="gallery-swiper__wrapper">
+              <div class="gallery-swiper__slide"></div>
+              <div class="gallery-swiper__slide"></div>
+              <div class="gallery-swiper__slide"></div>
+              <div class="gallery-swiper__slide"></div>
+              <div class="gallery-swiper__slide"></div>
+              <div class="gallery-swiper__slide"></div>
+            </div>
+            <button class="gallery-swiper__btn btn-prev btn-reset"></button>
+            <div class="gallery-swiper__pagination"></div>
+            <button class="gallery-swiper__btn btn-next btn-reset"></button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
   <footer class="footer">
     <div class="container"></div>
   </footer>
@@ -225,6 +313,7 @@
   <script src="lib/simplebar.min.js"></script>
   <script src="lib/dima.js"></script>
   <script src="js/search.js"></script>
+  <script src="lib/swiper-bundle.min.js"></script>
   <!-- <script src="https://api-maps.yandex.ru/2.1/?apikey=вашAPI-ключ&lang=ru_RU"></script> -->
   <!-- <script src="lib/inputmask.min.js"></script> -->
   <!-- <script src="lib/just-validate.production.min.js"></script> -->

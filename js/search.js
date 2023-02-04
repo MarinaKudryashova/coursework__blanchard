@@ -3,7 +3,6 @@ let btnOpen = document.querySelector('.searchbar__open');
 let formSearch = document.querySelector('.searchbar__form');
 let input = document.querySelector('.searchbar__field');
 let btnClose = document.querySelector('.searchbar__close');
-console.log(formSearch);
 
 btnOpen.addEventListener('click', function() {
   formSearch.classList.add('searchbar__form--open');
