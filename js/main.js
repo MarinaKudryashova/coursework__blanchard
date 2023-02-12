@@ -190,7 +190,7 @@ const gallerySwiper = new Swiper(".gallery-swiper", {
       spaceBetween: 15,
     },
     // when window width is >= 567px
-    567: {
+    576: {
       slidesPerView: 2,
       slidesPerGroup: 2,
       spaceBetween: 38,
